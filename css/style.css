@@ -1,0 +1,181 @@
+:root {
+  --brand-color-grey: #2e2f42;
+  --brand-color-grey-text: #434455;
+  --brand-color-violet: #4d5ae5;
+  --brand-color-violet-hover: #404bbf;
+  --color-white: #fff;
+  --color-violet-light-one: #f4f4fd;
+  --color-violet-light-two: #e7e9fc;
+}
+
+body {
+  color: var(--brand-color-grey);
+  font-family: Roboto, Raleway, sans-serif;
+}
+
+/* HEADER */
+
+.header .logo {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--brand-color-grey);
+}
+
+.nav li a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--brand-color-grey);
+}
+
+.nav li a:hover {
+  color: var(--brand-color-violet-hover);
+}
+
+/* .nav li a::after {
+  content: "";
+  height: 4px;
+  background: #404bbf;
+  border-radius: 2px;
+} */
+
+.address a {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--brand-color-grey-text);
+}
+
+.address a:hover,
+.address a:focus {
+  color: var(--brand-color-violet-hover);
+}
+
+/* MAIN PAGE */
+
+.main-page-heading > h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 3;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+  background-color: var(--brand-color-grey);
+}
+
+.main-page-heading button {
+  width: 169px;
+  height: 56px;
+  background: var(--brand-color-violet);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.2;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.main-page-heading button:hover {
+  background: var(--brand-color-violet-hover);
+}
+
+.main-page-section-two h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.main-page-section-two p {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--brand-color-grey-text);
+}
+
+.main-page-section-three > h2,
+.main-page-section-four > h2 {
+  font-size: 36px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.main-page-section-four h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.main-page-section-four p {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--brand-color-grey-text);
+}
+
+/* PORTFOLIO */
+
+.portfolio-section-one button {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: var(--brand-color-violet);
+  width: 116px;
+  height: 48px;
+  background: var(--color-violet-light-one);
+  border: 1px solid var(--color-violet-light-two);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.portfolio-section-one button:hover {
+  background: var(--brand-color-violet-hover);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: var(--color-white);
+}
+
+.portfolio-section-two h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.portfolio-section-two p {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--brand-color-grey-text);
+}
+
+/* FOOTER */
+
+.footer .logo {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--brand-color-grey);
+}
+
+.footer p {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-violet-light-two);
+  background: var(--brand-color-grey);
+}
