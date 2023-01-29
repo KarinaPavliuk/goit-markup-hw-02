@@ -166,6 +166,10 @@ body {
 
 /* PORTFOLIO */
 
+.portfolio {
+  background-color: var(--brand-color-white);
+}
+
 .portfolio-heading {
   display: none;
 }
@@ -231,5 +235,4 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--brand-color-accent);
-  background: var(--brand-color-dark);
 }
