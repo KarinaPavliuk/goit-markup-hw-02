@@ -118,6 +118,8 @@ body {
   background: var(--brand-color-pressed-state);
 }
 
+/* FEATURES */
+
 .features-heading {
   display: none;
 }
@@ -135,6 +137,8 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* DOING */
+
 .doing-heading,
 .team-heading {
   font-size: 36px;
@@ -145,23 +149,23 @@ body {
   color: var(--brand-color-dark);
 }
 
+/* TEAM */
+
 .team {
   background: var(--brand-color-light);
 }
 
-.main-page-section-four h3 {
+.team-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  text-align: center;
   letter-spacing: 0.02em;
+  color: var(--brand-color-dark);
 }
-.main-page-section-four p {
+.team-position {
   font-size: 16px;
   line-height: 1.2;
-  text-align: center;
   letter-spacing: 0.02em;
-  color: var(--brand-color-text);
 }
 
 /* PORTFOLIO */
