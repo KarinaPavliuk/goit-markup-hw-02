@@ -1,112 +1,152 @@
 :root {
-  --brand-color-grey: #2e2f42;
-  --brand-color-grey-text: #434455;
-  --brand-color-violet: #4d5ae5;
-  --brand-color-violet-hover: #404bbf;
-  --color-white: #fff;
-  --color-violet-light-one: #f4f4fd;
-  --color-violet-light-two: #e7e9fc;
+  --brand-color-dark: #2e2f42;
+  --brand-color-text: #434455;
+  --brand-color-primary-brand: #4d5ae5;
+  --brand-color-pressed-state: #404bbf;
+  --brand-color-white: #fff;
+  --brand-color-light: #f4f4fd;
+  --brand-color-accent: #e7e9fc;
 }
 
 body {
-  color: var(--brand-color-grey);
-  font-family: Roboto, Raleway, sans-serif;
+  color: var(--brand-color-text);
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  background: #ffffff;
 }
 
 /* HEADER */
 
-.header .logo {
+.header-logo {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--brand-color-grey);
+  color: var(--brand-color-dark);
+  text-decoration: none;
 }
 
-.nav li a {
+.header-logo-web {
+  color: var(--brand-color-primary-brand);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.header-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--brand-color-grey);
+  color: var(--brand-color-dark);
 }
 
-.nav li a:hover {
-  color: var(--brand-color-violet-hover);
+.header-link:hover,
+.header-link:focus {
+  color: var(--brand-color-pressed-state);
 }
 
-/* .nav li a::after {
+/* .header-link::after {
   content: "";
   height: 4px;
   background: #404bbf;
   border-radius: 2px;
 } */
 
-.address a {
+.header-address-list {
+  list-style: none;
+  font-style: normal;
+}
+
+.header-mail,
+.header-tel {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--brand-color-grey-text);
+  color: var(--brand-color-text);
+  text-decoration: none;
 }
 
-.address a:hover,
-.address a:focus {
-  color: var(--brand-color-violet-hover);
+.header-mail:hover,
+.header-tel:hover,
+.header-mail:focus,
+.header-tel:focus {
+  color: var(--brand-color-pressed-state);
 }
 
-/* MAIN PAGE */
+/* SUBHEADER */
 
-.main-page-heading > h1 {
+.subheader {
+  background-color: var(--brand-color-dark);
+}
+
+.subheader-heading {
   font-weight: 700;
   font-size: 56px;
-  line-height: 3;
+  /* line-height: 3; */
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--color-white);
-  background-color: var(--brand-color-grey);
+  color: var(--brand-color-white);
 }
 
-.main-page-heading button {
-  width: 169px;
-  height: 56px;
-  background: var(--brand-color-violet);
+.subheader-btn {
+  background: var(--brand-color-primary-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-size: 16px;
   line-height: 1.2;
   align-items: center;
   letter-spacing: 0.04em;
-  color: var(--color-white);
+  color: var(--brand-color-white);
   cursor: pointer;
+  border: none;
 }
 
-.main-page-heading button:hover {
-  background: var(--brand-color-violet-hover);
+.btn {
+  font-family: inherit;
 }
 
-.main-page-section-two h3 {
+.subheader-btn:hover,
+.subheader-btn:focus {
+  background: var(--brand-color-pressed-state);
+}
+
+.features-heading {
+  display: none;
+}
+
+.features-list-heading {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--brand-color-dark);
 }
 
-.main-page-section-two p {
-  font-size: 16px;
+.features-list-descr {
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--brand-color-grey-text);
 }
 
-.main-page-section-three > h2,
-.main-page-section-four > h2 {
+.doing-heading,
+.team-heading {
   font-size: 36px;
   line-height: 2;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--brand-color-dark);
+}
+
+.team {
+  background: var(--brand-color-light);
 }
 
 .main-page-section-four h3 {
@@ -121,61 +161,75 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--brand-color-grey-text);
+  color: var(--brand-color-text);
 }
 
 /* PORTFOLIO */
 
-.portfolio-section-one button {
+.portfolio-heading {
+  display: none;
+}
+
+.portfolio-btn {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.04em;
-  color: var(--brand-color-violet);
-  width: 116px;
-  height: 48px;
-  background: var(--color-violet-light-one);
-  border: 1px solid var(--color-violet-light-two);
+  color: var(--brand-color-primary-brand);
+  background: var(--brand-color-light);
+  border: 1px solid var(--brand-color-accent);
   border-radius: 4px;
   cursor: pointer;
 }
 
-.portfolio-section-one button:hover {
-  background: var(--brand-color-violet-hover);
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background: var(--brand-color-pressed-state);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  color: var(--color-white);
+  border-color: var(--brand-color-pressed-state);
+  color: var(--brand-color-white);
 }
 
-.portfolio-section-two h3 {
+.portfolio-content-heading {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--brand-color-dark);
 }
 
-.portfolio-section-two p {
+.portfolio-content-descr {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--brand-color-grey-text);
+  color: var(--brand-color-text);
 }
 
 /* FOOTER */
 
-.footer .logo {
+.footer {
+  background-color: var(--brand-color-dark);
+}
+
+.footer-logo {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--brand-color-grey);
+  text-decoration: none;
+  color: var(--brand-color-light);
 }
 
-.footer p {
+.footer-logo-web {
+  color: var(--brand-color-primary-brand);
+}
+
+.footer-descr {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--color-violet-light-two);
-  background: var(--brand-color-grey);
+  color: var(--brand-color-accent);
+  background: var(--brand-color-dark);
 }
